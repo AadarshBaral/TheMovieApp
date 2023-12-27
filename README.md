@@ -22,7 +22,7 @@ Follow these steps to set up and run the MovieApp project:
 
 	   ```bash
 		  cd TheMovieApp
-  3. **Create and env file:**
+  3. **Create an .env file:**
 
 ```
 	REACT_APP_KEY=YOUR TMDB KEY

@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+
+import Search from "./components/Search";
+import Completed from "./components/Completed";
+import Watchlist from "./components/Watchlist";
+import Results from "./components/Results";
+import "./App.css";
+import { Movies } from "./components/Movies";
+import { GlobalProvider } from "./Context/GlobalState";
+import { MovieDetails } from "./components/MovieDetails";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <GlobalProvider>
+        <Router>
+          <Navbar />
+
+          <Routes>
+            <Route exact path="/" element={<Movies />}></Route>
+            <Route path="/completed_watching" element={<Completed />}></Route>
+            <Route path="/search" element={<Search />}></Route>
+            <Route path="/watchlist" element={<Watchlist />}></Route>
+            <Route path="/movie_detail" element={<MovieDetails />}></Route>
+          </Routes>
+        </Router>
+      </GlobalProvider>
+    </>
   );
 }
 

@@ -1,5 +1,5 @@
 
-# MovieApp 🎬
+# TheMovieApp 🎬
 
 MovieApp is a React.js project that allows users to discover movies using the TMDB API, add them to a watchlist, and move them to a completed watching section.
 

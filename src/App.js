@@ -1,10 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-
 import Search from "./components/Search";
 import Completed from "./components/Completed";
 import Watchlist from "./components/Watchlist";
-import Results from "./components/Results";
 import "./App.css";
 import { Movies } from "./components/Movies";
 import { GlobalProvider } from "./Context/GlobalState";
@@ -16,7 +14,6 @@ function App() {
       <GlobalProvider>
         <Router>
           <Navbar />
-
           <Routes>
             <Route exact path="/" element={<Movies />}></Route>
             <Route path="/completed_watching" element={<Completed />}></Route>

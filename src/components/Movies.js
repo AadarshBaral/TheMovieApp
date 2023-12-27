@@ -10,19 +10,7 @@ export const Movies = () => {
     e.preventDefault();
     setGenre(e.target.value);
   };
-  // const handleNextPage= () => {
-  //   setPage(current_page + 1);
-  //   console.log(current_page)
 
-  // }
-  // const handlePrevPage= () => {
-  //   setPage(current_page-1)
-  //   console.log(current_page)
-
-  // }
-  // const handleDisabled = () => {
-  //   return (current_page ===1)
-  // };
 
   useEffect(() => {
     fetch(
@@ -35,7 +23,6 @@ export const Movies = () => {
       .then((res) => res.json())
       .then((data) => {
         if (!data.errors) {
-          console.log(data.results);
           setResults(data.results);
         } else {
           setResults([]);

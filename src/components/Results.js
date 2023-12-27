@@ -12,7 +12,7 @@ export const Results = ({ movie, type }) => {
   } = useContext(GlobalContext);
   let storedMovie = watchlist.find((o) => o.id === movie.id);
   const watchlistDisabled = storedMovie ? true : false;
-  console.log(watched);
+
 
   const inWatched = watched.find((o) => o.id === movie.id) ? true : false;
 

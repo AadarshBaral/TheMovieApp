@@ -1,11 +1,12 @@
 import React, { useContext } from "react";
 import { useLocation } from "react-router-dom";
 import { GlobalContext } from "../Context/GlobalState";
+
+//This page handles the data of individual movie items
+//useLocation has been used to receive props through the 'state' attribute of <LINK>
+
 export const MovieDetails = (props) => {
   const {
-    addMovieToWatchList,
-    removeMovieFromWatchlist,
-    addToWatched,
     watchlist,
   } = useContext(GlobalContext);
 

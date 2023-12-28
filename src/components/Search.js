@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import { Results } from "./Results";
 
+// component which handles the searching of movie through the api.
+//makes use of the  <Results/> component to render data into movie cards
+
+
 export default function Search() {
   const [input, setInput] = useState("");
   const [results, setResults] = useState([]);

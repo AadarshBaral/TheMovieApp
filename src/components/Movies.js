@@ -1,6 +1,8 @@
 import { React, useState, useEffect } from "react";
 import { Results } from "./Results";
 
+//Component which manages the api on the home page
+
 export const Movies = () => {
   let [current_genre, setGenre] = useState(1);
   let [current_page, setPage] = useState(1);
@@ -10,8 +12,6 @@ export const Movies = () => {
     e.preventDefault();
     setGenre(e.target.value);
   };
-
-
   useEffect(() => {
     fetch(
       `${

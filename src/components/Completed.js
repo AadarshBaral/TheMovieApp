@@ -2,6 +2,9 @@ import React, { useContext } from "react";
 import { GlobalContext } from "../Context/GlobalState";
 import { Results } from "./Results";
 
+// Completed watching (Watched) page 
+// Movies which are marked as completed on the watchlist page
+// will appear on this page.
 export default function Completed() {
   const { watched } = useContext(GlobalContext);
   return (

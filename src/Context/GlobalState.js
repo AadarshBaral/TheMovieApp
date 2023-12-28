@@ -1,7 +1,12 @@
 import React, { createContext, useReducer, useEffect } from "react";
 import AppReducer from "./AppReducer";
+
+// this code sets up a global state management system using React context and a provider component
+
 // initial state
 const initialState = {
+  // Define the initial state for the context. It initializes the watchlist and watched arrays by retrieving them from the localStorage or setting them as empty arrays if they don't exist.
+
   watchlist: localStorage.getItem("watchlist")
     ? JSON.parse(localStorage.getItem("watchlist"))
     : [],
@@ -34,6 +39,9 @@ export const GlobalProvider = (props) => {
   };
 
   return (
+
+    // Render the GlobalContext.Provider with the value prop containing the state and action functions. This makes the state and actions available to any components wrapped with this provider.
+
     <GlobalContext.Provider
       value={{
         watchlist: state.watchlist,

@@ -2,6 +2,9 @@ import React, { useContext } from "react";
 import { GlobalContext } from "../Context/GlobalState";
 import { Results } from "./Results";
 
+//Page where movies marked as 'Add to watchlist' appear.
+//makes use of the GlobalContext for accessing the global state of the app
+
 export default function Watchlist() {
   const { watchlist } = useContext(GlobalContext);
   return (

@@ -1,5 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
+//Navigation component for accessing all the pages of the app.
+
 export default function Navbar() {
   return (
     <>

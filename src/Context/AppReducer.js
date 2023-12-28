@@ -1,3 +1,7 @@
+//manages the state related to a movie watchlist,
+// allowing user to add movies to the watchlist,
+// remove them, and move them to a watched list.
+
 export default (state, action) => {
   switch (action.type) {
     case "ADD_MOVIE_TO_WATCHLIST":

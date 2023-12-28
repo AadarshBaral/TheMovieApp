@@ -1,4 +1,5 @@
 
+
 # TheMovieApp 🎬
 
 MovieApp is a React.js project that allows users to discover movies using the TMDB API, add them to a watchlist, and move them to a completed watching section.
@@ -23,17 +24,17 @@ Follow these steps to set up and run the MovieApp project:
   3. **Navigate to project directory:**
 
 	   ```bash
-		  cd TheMovieApp
+		cd tmdb-movie
   3. **Create an .env file:**
 
-```
-	REACT_APP_KEY=YOUR TMDB KEY
-```
+		```
+		REACT_APP_KEY=YOUR TMDB KEY
+		```
   3. **Start the app**
 
-```bash
-	npm start
-```
+		```bash
+		npm start
+		```
 The app will be accessible at `http://localhost:3000`.
 
 

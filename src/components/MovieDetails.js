@@ -5,7 +5,7 @@ import { GlobalContext } from "../Context/GlobalState";
 //This page handles the data of individual movie items
 //useLocation has been used to receive props through the 'state' attribute of <LINK>
 
-export const MovieDetails = (props) => {
+export const MovieDetails = () => {
   const {
     watchlist,
   } = useContext(GlobalContext);
@@ -17,9 +17,6 @@ export const MovieDetails = (props) => {
     image,
     poster,
     rating,
-    vote_average,
-    total_ratings,
-    vote_count,
     description,
     id,
   } = location.state;

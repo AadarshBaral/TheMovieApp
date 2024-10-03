@@ -310,3 +310,22 @@ input[type=text] {
   justify-content: center;
   align-items: center;
 }
+.pagination-buttons {
+  display :flex;
+  justify-content: center;
+  align-items:center;
+
+
+  button {
+    padding: 10px;
+    margin : 10px 0 10px 0;
+  }
+  .prev {
+    margin-right: 10px;
+    border-radius: 10px;
+    color: black;
+  }
+  .next {
+    color : black;
+  }
+}
